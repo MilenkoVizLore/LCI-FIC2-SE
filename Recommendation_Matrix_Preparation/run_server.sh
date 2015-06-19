@@ -1,5 +1,6 @@
 #!/bin/bash
 service apache2 restart
+service apache2 restart
 /etc/init.d/postgresql start
 sleep 120
 service mysql start
