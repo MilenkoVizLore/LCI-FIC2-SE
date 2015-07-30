@@ -5,7 +5,7 @@ PORT=$2
 [ "$PORT" ] || PORT="4545"
 echo "Entering FIC2Lab smoke test sequence. LCI's validation procedure of SE Context Aware Recommendation (Recommendation Matrix PreparationModul) engaged. Target host: $HOST:$PORT"
 echo "Waiting for initialization of the docker image"
-sleep 400;
+sleep 500;
 retry=0
 while [ $retry -lt 14 ]; do
 nc -z $HOST $PORT
